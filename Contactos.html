@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="contactos.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/Index.html">Inicio</a></li>
+            <li><a href="/Galeria.html">Galeria</a></li>
+            <li><a href="/Contactos.html">Contactos</a></li>
+        </ul>
+    </nav>
+    <h1>
+        Contactos
+    </h1>
+    <div>
+        <img src="/recursos/yomero.jpg" alt="Jose Inostroza">
+        <p>Antas de que nos entregues algo me presento: Jose Inostroza encargado de esta galeria y Estudiante de progrmacion en la Universidad San Sebastian</p>
+    </div>
+    <H2>Contactos</H2>
+    <p>Ahora es tu turno:</p>
+    <form action="mailto:jose.inostroza.fernandez@estudiante.ipss.cl" method="post" enctype="text/plain">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Jose Inostroza"><br>
+        <label for="email">Correo Electrónico:</label><br>
+        <input type="email" id="email" name="email" placeholder="jose.inostroza.fernandez@estudiante.ipss.cl"><br>
+        <label for="asunto">Asunto:</label><br>
+        <select name="asunto" id="asunto" required>
+            <option value="">Selecciona un asunto</option>
+            <option value="compra">Compra</option>
+            <option value="consulta">Consulta</option>
+            <option value="venta">Venta</option>
+        </select><br>
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..."></textarea><br>
+        <input type="submit" value="Enviar">    
+</body>
+</html>
